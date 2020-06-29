@@ -10,11 +10,12 @@ from instapy import set_workspace
 set_workspace(path=None)
 
 # get an InstaPy session!
-session = InstaPy()
+session = InstaPy(username="esports_merchandising", 
+        password="Esportsmkt11_inst")
 
 with smart_run(session):
     # general settings
     session.set_dont_include(["friend1", "friend2", "friend3"])
 
     # activity
-    session.like_by_tags(["natgeo"], amount=10)
+    session.like_by_tags(["esports", "fnatic"], amount=10)
