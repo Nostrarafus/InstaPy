@@ -245,7 +245,7 @@ class InstaPy:
         self.min_likes = 0
 
         self.delimit_commenting = False
-        self.commenting_approved = True
+        self.commenting_approved = False
         self.max_comments = 35
         self.min_comments = 0
         self.comments_mandatory_words = []

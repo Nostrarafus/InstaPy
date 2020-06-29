@@ -430,7 +430,7 @@ def process_comments(
         )
     if not commenting_approved:
         logger.info(disapproval_reason)
-        return False
+        return True
 
     (
         commenting_approved,
