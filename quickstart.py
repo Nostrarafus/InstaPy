@@ -18,4 +18,10 @@ with smart_run(session):
     session.set_dont_include(["friend1", "friend2", "friend3"])
 
     # activity
-    session.like_by_tags(["esports", "fnatic"], amount=10)
+    session.set_user_interact(amount=2,
+				 percentage=70,
+                  randomize=True,
+                   media='Photo')
+
+    session.follow_likers(['elrubiuswtf' , 'grefg_official'], photos_grab_amount = 2, follow_likers_per_photo = 30, randomize=True, sleep_delay=600, interact=False)
+
